@@ -27,5 +27,5 @@ urlpatterns = [
     path("menu/<int:pk>", views.SingleMenuItemView.as_view()),
     path("", include(router.urls)),
     # add following line in urlpatterns list
-     # path("api-token-auth/", obtain_auth_token),
+    path("api-token-auth/", obtain_auth_token),
 ]

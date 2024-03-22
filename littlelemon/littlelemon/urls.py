@@ -38,6 +38,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("restaurant/", include("restaurant.urls")),
     # add following lines to update urlpatterns list
-     # path("auth/", include("djoser.urls")),
-     # path("auth/", include("djoser.urls.authtoken")),
+    path("auth/", include("djoser.urls")),
+    path("auth/", include("djoser.urls.authtoken")),
 ]
